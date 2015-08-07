@@ -1,0 +1,193 @@
+.moon_rotation{
+
+      margin-left: 46%;
+      width: 90px;
+      height: 90px;
+      -webkit-animation-name: moon_rot; /* Chrome, Safari, Opera */
+      -webkit-animation-duration: 20s; /* Chrome, Safari, Opera */
+      animation-name: moon_rot;
+      animation-duration: 20s;
+     -webkit-animation-iteration-count: infinite; /* Chrome, Safari, Opera */
+      animation-iteration-count: infinite;
+      -webkit-animation-timing-function: linear; /* Chrome, Safari, Opera */
+      animation-timing-function: linear;
+}
+
+@-webkit-keyframes moon_rot {
+  0%   {margin-left: 55%;
+        width: 60px;
+        height: 60px;
+        margin-top: -8%;}
+
+  25%  {margin-top: -6%;
+        width: 0px;
+        height: 0px;
+        margin-left: 53%;
+        opacity: 1;
+        background-color: #000000
+  }
+
+  50%  {margin-top: -3%;
+        width: 0px;
+        height: 0px;
+        margin-left: 43%;
+        opacity: 0;
+
+
+  }
+  75%  {margin-top: -3%;
+        width: 100px;
+        height: 100px;
+        margin-left: 44%;
+        opacity: 1;
+  }
+  100% {margin-top: -8%;
+        width: 60px;
+        height: 60px;
+        margin-left: 55%;
+        opacity: 1;
+  }
+}
+
+@keyframes moon_rot {
+
+    0%   {margin-left: 55%;
+          width: 60px;
+          height: 60px;
+          opacity: 1;
+          margin-top: -8%;
+        }
+
+    25%  {margin-top: -6%;
+          width: 0px;
+          height: 0px;
+          margin-left: 53%;
+          opacity: 1;
+          background-color: #000000;
+    }
+
+    50%  {margin-top: -3%;
+          width: 0px;
+          height: 0px;
+          margin-left: 43%;
+          opacity: 0;
+
+    }
+    75%  {margin-top: -3%;
+          width: 100px;
+          height: 100px;
+          margin-left: 44%;
+          opacity: 1;
+    }
+    100% {margin-top: -8%;
+          width: 60px;
+          height: 60px;
+          opacity: 1;
+          margin-left: 55%;
+    }
+}
+
+.shoot_star{
+  background-image: url('../images/star2.png');
+  width: 60px;
+  height: 30px;
+  position: absolute;
+  margin-left: 25%;
+  -webkit-animation-name: shooting_star; /* Chrome, Safari, Opera */
+  -webkit-animation-duration: 1s; /* Chrome, Safari, Opera */
+  animation-name: shooting_star;
+  animation-duration: 1s;
+ -webkit-animation-iteration-count:1; /* Chrome, Safari, Opera */
+  animation-iteration-count: 1;
+  -webkit-animation-timing-function: linear; /* Chrome, Safari, Opera */
+  animation-timing-function: linear;
+}
+
+@-webkit-keyframes shooting_star {
+
+from { margin-left: 25%;
+  margin-top: 1%;
+opacity: 1;
+}
+to { margin-left: 5%;
+margin-top: 4%;
+opacity: 0;
+display: none;}
+
+}
+
+@keyframes shooting_star {
+
+  from { margin-left: 25%;
+  margin-top: 1%;
+opacity: 1;
+}
+  to{ margin-left: 5%;
+  margin-top: 4%;
+opacity: 0;
+display: none;}
+
+}
+
+.shoot_star2{
+  background-image: url('../images/star2.png');
+  width: 60px;
+  height: 30px;
+  position: absolute;
+  margin-left: 25%;
+  -webkit-animation-name: shooting_star2; /* Chrome, Safari, Opera */
+  -webkit-animation-duration: 1s; /* Chrome, Safari, Opera */
+  animation-name: shooting_star2;
+  animation-duration: 1s;
+ -webkit-animation-iteration-count:1; /* Chrome, Safari, Opera */
+  animation-iteration-count: 1;
+  -webkit-animation-timing-function: linear; /* Chrome, Safari, Opera */
+  animation-timing-function: linear;
+}
+
+@-webkit-keyframes shooting_star2 {
+
+from { margin-left: 70%;
+  margin-top: -5%;
+opacity: 1;
+}
+to { margin-left: 60%;
+margin-top: 0%;
+opacity: 0;
+display: none;}
+
+}
+
+@keyframes shooting_star2 {
+
+  from { margin-left: 70%;
+  margin-top: -10%;
+opacity: 1;
+}
+  to{ margin-left: 60%;
+  margin-top: -5%;
+display: none;
+opacity: 0;}
+
+}
+.css-typing
+{
+    width: 533px;
+    white-space:nowrap;
+    overflow:hidden;
+    -webkit-animation: type 3s steps(50, end);
+    animation: type 3s steps(50, end);
+    color: #ffffff;
+    font-weight: bold;
+    margin-left: 31%;
+    font-family: Georgia;
+    margin-top: 5%
+}
+
+@keyframes type{
+    from { width: 0; }
+}
+
+@-webkit-keyframes type{
+    from { width: 0; }
+}

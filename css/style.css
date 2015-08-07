@@ -1,0 +1,146 @@
+#universe{
+  background-image: url('../images/universe.jpg');
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 300px;
+  padding-top: 40px;
+}
+.planet{
+  background-image: url('../images/world.png');
+  width: 123px;
+  height: 123px;
+  margin-left: auto;
+  margin-right: auto;
+  z-index: 1;
+}
+.planet2{
+  background-image: url('../images/world2.png');
+  width: 123px;
+  height: 123px;
+  margin-left: auto;
+  margin-right: auto;
+  z-index: 1;
+}
+
+#moon{
+  background-color: #FFFFFF;
+  border-radius: 50px;
+  width: 100px;
+  height: 100px;
+  position: absolute;
+  margin-left: 46%;
+}
+#sun{
+  background-image: url('../images/sun.png');
+  width: 160px;
+  height: 307px;
+  float: right;;
+  margin-top: -12%;
+}
+.moon_brightness1{
+  background: -webkit-linear-gradient(left, #ffffff ,#FBFFB2); /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(right, #ffffff ,#FBFFB2); /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(right, #ffffff ,#FBFFB2); /* For Firefox 3.6 to 15 */
+  background: linear-gradient(to right, #ffffff ,#FBFFB2); /* Standard syntax (must be last) */
+}
+.moon_brightness2{
+  background: -webkit-linear-gradient(left, #ffffff ,#F9FF93); /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(right, #ffffff,#F9FF93); /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(right, #ffffff,#F9FF93); /* For Firefox 3.6 to 15 */
+  background: linear-gradient(to right, #ffffff,#F9FF93); /* Standard syntax (must be last) */
+}
+.moon_brightness3{
+  background: -webkit-linear-gradient(left, #ffffff ,#F6FF4F); /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(right, #ffffff,#F6FF4F); /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(right, #ffffff,#F6FF4F); /* For Firefox 3.6 to 15 */
+  background: linear-gradient(to right, #ffffff,#F6FF4F); /* Standard syntax (must be last) */
+}
+.moon_brightness4{
+  background: -webkit-linear-gradient(left,#F7EED2 ,#F2FF00); /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(right, #F7EED2,#F2FF00); /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(right, #F7EED2,#F2FF00); /* For Firefox 3.6 to 15 */
+  background: linear-gradient(to right, #F7EED2,#F2FF00); /* Standard syntax (must be last) */
+}
+#title{
+  display: none;
+}
+.title_section{
+  text-transform: uppercase;
+  margin-bottom: 40px;
+  font-weight: bold;
+  text-align: center;
+}
+.think_name{
+  color: #CDCDCB;
+}
+
+.quote_text{
+margin-top: 10px;
+}
+.thinkers_img{
+  border:5px solid #CDCDCB;
+  border-radius: 85px;
+  display: none;
+  -webkit-transition: margin-left: 2s; /* Safari */
+  transition: margin-left: 2s;
+}
+#first_section{
+  background-color: #67BCDB;
+  padding-top: 1px;
+  text-align: center;
+}
+#first_section .col-md-4{
+  width: 40%;
+}
+.quote_th{
+  display: none;
+}
+#first_section .title_section {
+  color: #ffffff;
+}
+#second_section{
+background-color: #FDF3E7;
+padding-top: 1px;
+}
+#second_section h4 {
+  text-align: center;
+  color: #ffffff;
+  font-size: 30px;
+  font-weight: bold;
+  margin-top: 60px;
+}
+#second_section .title_section{
+  color: #585858;
+}
+#negative_section{
+background-image: url('../images/apocalipsis.png');
+background-repeat: no-repeat;
+height: 500px;
+text-align: center;
+color: #ffffff;
+}
+#negative_section p{
+margin-top: 25px;
+margin-bottom: 40px;
+}
+
+#positive_section p{
+margin-top: 25px;
+margin-bottom: 40px;
+}
+
+#positive_section{
+background-image: url('../images/future.png');
+background-repeat: no-repeat;
+height: 500px;
+text-align: center;
+color: #ffffff;
+}
+.vote_bt{
+background-color: rgba(0, 0, 0, 0);
+height: 50px;
+width: 120px;
+border: 1px solid #ffffff;
+border-radius: 5px;
+color: #ffffff;
+}

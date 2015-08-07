@@ -191,3 +191,31 @@ opacity: 0;}
 @-webkit-keyframes type{
     from { width: 0; }
 }
+.wrapper_box{
+  background-color: #000000;
+  height: 450px;
+  opacity: 0.5;
+  width: 100%;
+  position: absolute;
+}
+
+.wrapp_box_anim{
+  -webkit-animation-name: wrapp_box; /* Chrome, Safari, Opera */
+  -webkit-animation-duration: 0.5s; /* Chrome, Safari, Opera */
+  animation-name: wrapp_box;
+  animation-duration: 0.5s;
+  -webkit-animation-timing-function: linear; /* Chrome, Safari, Opera */
+  animation-timing-function: linear;
+  -webkit-animation-fill-mode: forwards; /* Chrome, Safari, Opera */
+    animation-fill-mode: forwards;
+}
+
+@-webkit-keyframes wrapp_box {
+from {height: 450px;}
+ to{height: 0px;}
+}
+
+@keyframes wrapp_box {
+  from{height: 450px;}
+  to{height: 0px;}
+}

@@ -118,15 +118,19 @@ background-repeat: no-repeat;
 height: 500px;
 text-align: center;
 color: #ffffff;
+padding-right: 1px;
+padding-left: 1px;
 }
 #negative_section p{
 margin-top: 25px;
 margin-bottom: 40px;
+font-weight: bold;
 }
 
 #positive_section p{
 margin-top: 25px;
 margin-bottom: 40px;
+font-weight: bold;
 }
 
 #positive_section{
@@ -135,6 +139,8 @@ background-repeat: no-repeat;
 height: 500px;
 text-align: center;
 color: #ffffff;
+padding-left: 1px;
+padding-right: 1px;
 }
 .vote_bt{
 background-color: rgba(0, 0, 0, 0);

@@ -22,6 +22,18 @@ $('.quote_th').delay(1000).fadeIn(1000);
 
 }, 5000);
 
+$("#negative_section").mouseover(function(){
+
+    $("#wrapper_box_n").addClass('wrapp_box_anim');
+
+});
+
+$("#positive_section").mouseover(function(){
+
+    $("#wrapper_box_p").addClass('wrapp_box_anim');
+
+});
+
 /*setInterval(function () {
 
 nearly_sun();

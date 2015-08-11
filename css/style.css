@@ -66,7 +66,6 @@
 }
 .title_section{
   text-transform: uppercase;
-  margin-bottom: 40px;
   font-weight: bold;
   text-align: center;
 }
@@ -99,18 +98,19 @@ margin-top: 10px;
   color: #ffffff;
 }
 #second_section{
-background-color: #FDF3E7;
+background-color: #DC2742;
 padding-top: 1px;
+padding-right: 1px;
 }
 #second_section h4 {
   text-align: center;
   color: #ffffff;
   font-size: 30px;
   font-weight: bold;
-  margin-top: 60px;
+  margin-top: 100px;
 }
 #second_section .title_section{
-  color: #585858;
+  color: #363635;
 }
 #negative_section{
 background-image: url('../images/apocalipsis.png');
@@ -149,4 +149,30 @@ width: 120px;
 border: 1px solid #ffffff;
 border-radius: 5px;
 color: #ffffff;
+}
+#third_section{
+  background-image: url('../images/nature.jpg');
+  background-repeat: no-repeat;
+  /*background-color: #F15D58;*/
+  width: 100%;
+  padding-right: 1px;
+  padding-bottom: 1px;
+  padding-top: 1px;
+  position: relative;
+  height: 500px;
+}
+#third_section .title_section{
+/*color: #363635;*/
+color: #fff;
+}
+
+#third_section #par_box1{
+  width: 200px;
+    position: absolute;
+    text-align: center;
+    color: #FFF;
+}
+
+#four_section{
+  height: 400px;
 }

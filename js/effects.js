@@ -34,6 +34,26 @@ $("#positive_section").mouseover(function(){
 
 });
 
+$("#positive_section").mouseleave(function(){
+
+    $("#wrapper_box_p").addClass('wrapp_box_animII');
+
+    setTimeout(function () {
+      $("#wrapper_box_p").removeClass('wrapp_box_anim');
+      $("#wrapper_box_p").removeClass('wrapp_box_animII');
+    }, 500);
+});
+
+$("#negative_section").mouseleave(function(){
+
+    $("#wrapper_box_n").addClass('wrapp_box_animII');
+
+    setTimeout(function () {
+      $("#wrapper_box_n").removeClass('wrapp_box_anim');
+      $("#wrapper_box_n").removeClass('wrapp_box_animII');
+    }, 500);
+});
+
 /*setInterval(function () {
 
 nearly_sun();

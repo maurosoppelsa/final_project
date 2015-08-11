@@ -219,3 +219,24 @@ from {height: 450px;}
   from{height: 450px;}
   to{height: 0px;}
 }
+
+.wrapp_box_animII{
+  -webkit-animation-name: wrapp_boxII; /* Chrome, Safari, Opera */
+  -webkit-animation-duration: 0.5s; /* Chrome, Safari, Opera */
+  animation-name: wrapp_boxII;
+  animation-duration: 0.5s;
+  -webkit-animation-timing-function: linear; /* Chrome, Safari, Opera */
+  animation-timing-function: linear;
+  -webkit-animation-fill-mode: forwards; /* Chrome, Safari, Opera */
+    animation-fill-mode: forwards;
+}
+
+@-webkit-keyframes wrapp_boxII {
+from {height: 0px;}
+ to{height: 450px;}
+}
+
+@keyframes wrapp_boxII {
+  from{height: 0px;}
+  to{height: 450px;}
+}

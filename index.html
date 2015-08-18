@@ -3,11 +3,72 @@
 <head>
 <head> <meta charset="UTF-8">
 <script src="js/jquery.js"></script>
-<link href="css/style.css" title="compact" rel="stylesheet" type="text/css">
+<link href="css/style.css" rel="stylesheet" type="text/css">
+<link href="css/responsive.css" rel="stylesheet" type="text/css">
 <link href="css/animations.css" title="compact" rel="stylesheet" type="text/css">
 <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="https://www.google.com/jsapi"></script>
+<script type="text/javascript">
+      google.load("visualization", "1", {packages:["corechart"]});
+      google.setOnLoadCallback(drawChart);
+      function drawChart() {
+
+        var data = google.visualization.arrayToDataTable([
+             ['Task', 'Hunger'],
+             ['Asia and Pacific',  23.3],
+             ['Africa',  11.7],
+             ['Latin America and Carribean',  3],
+             ['Developed Countries', 1],
+        ]);
+
+        var options = {
+           title: 'Hunger of the world - 926 Million'
+        };
+
+        var chart = new google.visualization.PieChart(document.getElementById('piechart'));
+
+        chart.draw(data, options);
+      }
+    </script>
+<script type="text/javascript">
+google.load('visualization', '1', {packages: ['corechart', 'bar']});
+google.setOnLoadCallback(drawBasic);
+
+function drawBasic() {
+
+      var data = google.visualization.arrayToDataTable([
+        ['Year', 'Dioxide', { role: 'style' } ],
+        ['2000', 10, 'color: #76A7FA'],
+        ['2003', 14, 'color: #76A7FA'],
+        ['2005', 16, 'color: #76A7FA'],
+        ['2010', 22, 'color: #76A7FA'],
+        ['2015', 28, 'color: #76A7FA']
+      ]);
+
+      var options = {
+        title: 'Emmissions (Millions metrics tons of carbon dioxide equivalents)',
+        hAxis: {
+          title: 'Years',
+          viewWindow: {
+            min: [0, 0, 30],
+            max: [30, 0, 0]
+          }
+        },
+        vAxis: {
+          title: 'Rating (scale of 1-6)'
+        }
+      };
+
+      var chart = new google.visualization.ColumnChart(
+        document.getElementById('chart_div'));
+
+      chart.draw(data, options);
+    }
+</script>
+
+</script>
 </head>
 <body>
 
@@ -15,61 +76,12 @@
   <div id="universe">
       <div id="world" class="planet"></div>
       <div id="moon" class="moon_rotation"></div>
-      <div id="sun"></div>
+      <div class="sat_anim" id="satellite"></div>
       <div id="star"></div>
       <div id="star2"></div>
       <div id="title">WHAT DO YOU THINK WILL BE THE FUTURE OF THE EARTH?</div>
   </div>
 </header>
-<!--
-<section id="first_section">
-  <h3 class="title_section"><i class="glyphicon glyphicon-bookmark"></i> The greater thinkers <i class="glyphicon glyphicon-bookmark"></i></h3>
-  <hr>
-    <div class="container-fluid">
-        <div class="row">
-            <div class="col-xs-6">
-                <div class="container-fluid">
-                    <div class="row">
-                      <div class="col-md-4"><img class="thinkers_img" src="images/thinkers/gandhi.png"></div>
-                      <div class="col-md-4"><blockquote><img class="quote_th" style="float: left; margin-right: 4px" src="images/icons/quote-icon.png"><p class="quote_text">An eye for an eye only ends up making the whole world blind.</p><small><p class="think_name">Mahatma Gandhi</p></small></blockquote>
-                      </div>
-                   </div>
-                </div>
-        </div>
-
-<div class="col-xs-6"><div class="container-fluid">
-    <div class="row">
-      <div class="col-md-4"><img id="img_think" class="thinkers_img" src="images/thinkers/albert.png"></div>
-      <div class="col-md-4"><blockquote><img class="quote_th" style="float: left" src="images/icons/quote-icon.png"><p class="quote_text">Look deep into nature and you will find the answer to everything..</p><small><p class="think_name">Albert Einstein</p></small></blockquote>
-      </div>
-   </div>
-</div></div>
-
-  </div>
-</div><hr>
-<div class="container-fluid">
-    <div class="row">
-        <div class="col-xs-6">
-            <div class="container-fluid">
-                <div class="row">
-                  <div class="col-md-4"><img class="thinkers_img" src="images/thinkers/nelson.png"></div>
-                  <div class="col-md-4"><blockquote><img class="quote_th" style="float: left; margin-right: 4px" src="images/icons/quote-icon.png"><p class="quote_text">Education is the most powerful weapon which you can use to change the world.</p><small><p class="think_name">Nelson Mandela</p></small></blockquote>
-                  </div>
-               </div>
-            </div>
-    </div>
-
-<div class="col-xs-6"><div class="container-fluid">
-<div class="row">
-  <div class="col-md-4"><img id="img_think" class="thinkers_img" src="images/thinkers/tolstoy.png"></div>
-  <div class="col-md-4"><blockquote><img class="quote_th" style="float: left" src="images/icons/quote-icon.png"><p class="quote_text">Everyone thinks of changing the world, but no one thinks of changing himself.</p><small><p class="think_name">Leo Tolstoy</p></small></blockquote>
-  </div>
-</div>
-</div></div>
-
-</div>
-</div>
-</section>-->
 <section id="second_section">
 <h3 class="title_section">How do you see the world in 50 years?</h3>
 
@@ -87,16 +99,59 @@
 </div>
 
 </section>
-<section id="third_section" data-type="background" data-speed="10">
-<h3 class="title_section">Statistics</h3>
-<article id="par_box1">
-<h4><i class="glyphicon glyphicon-tree-deciduous"></i>Global extinction rates are peaking</h4>
+<section id="third_section" class="parallax">
+<div id="content_sect_3">
+<h2 id="title_sect_3" class="title_section"><i class="glyphicon glyphicon-tree-deciduous"></i>Global extinction rates are peaking</h2>
 <p>Environmental destruction is reaching its apex now.
   Tropical forests are being especially hard hit, with 0.5% of animal and plant species going extinct each and every year – nearly ten times the rate seen in 2000.*
   As a result of so much tree loss, more and more carbon is being liberated.</p>
-</article>
+  <input id="wtd" type="button" class="button vote_bt" value="what can i do?">
+</div>
 </section>
-<section id="four_section"></section>
+<div id="separate"></div>
+<section id="four_section" class="parallax">
+  <div id="content_sect_4">
+<h2 id="title_sect4" class="title_section"><i class="glyphicon glyphicon-trash"></i> Waste Disposal</h2>
+<p>The over consumption of resources and creation of plastics are creating a global crisis of waste disposal. Developed countries are notorious for producing an excessive amount of waste or garbage and dumping their waste in the oceans and, less developed countries.
+  Nuclear waste disposal has tremendous health hazards associated with it. Plastic, fast food, packaging and cheap electronic wastes threaten the well being of humans.
+  Waste disposal is one of urgent current environmental problem.</p>
+  <input id="wtd" type="button" class="button vote_bt" value="what can i do?">
+</div>
+</section>
+
+<section id="five_section">
+<h2 id="title_sect_5" class="title_section"><i class="glyphicon glyphicon-stats"></i> STATISTICS</h2>
+<hr class="line_divider">
+<div id="stat_elements">
+<div id="piechart" style="width: 800px; height: 400px;"></div>
+<div id="chart_div" style="width: 800px; height: 400px;"></div>
+</div>
+</section>
+
+<section id="six_section">
+  <div id="the_comment" ><span id="comment_title"><i class="glyphicon glyphicon-comment"></i> Comments</span><br><iframe id="comment_content" src="comments.html"></iframe></div>
+<div id="sidebar"></div>
+
+<div id="form_box">
+  <h3 id="form_title">We want to know what do you think, leave a comment!</h3>
+  <form role="form">
+    <div class="form-group">
+      <label class="labels_form">Name:</label>
+      <input type="email" class="form-control" id="name">
+    </div>
+    <div class="form-group">
+      <label class="labels_form" for="email">Email address:</label>
+      <input type="email" class="form-control transit_form" id="email">
+    </div>
+    <div class="form-group">
+      <textarea id="comment" rows="5"></textarea>
+    </div>
+    <button id="button_form" type="submit" class="btn btn-default">Submit</button>
+  </form>
+</div>
+</section>
+<footer id="footer">
+</footer>
 <script src="js/effects.js"></script>
 <script src="js/parallax.js"></script>
 </body>

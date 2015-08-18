@@ -54,89 +54,34 @@ $("#negative_section").mouseleave(function(){
     }, 500);
 });
 
-/*setInterval(function () {
+$('#form_title').hide();
+$('.labels_form').hide();
+$('#button_form').hide();
+$('#comment').hide();
+$('#the_comment').hide();
 
-nearly_sun();
+window.addEventListener("scroll", function(event) {
+    var top = this.scrollY,
+        left =this.scrollX;
 
-world_shadow();
+if(top>=2300){
+  $('#sidebar').css('margin-left','0px');
+  $('#form_box .form-control').fadeIn('slow');
+  $('#form_box .form-control').css('display','block');
+  $('#form_title').slideDown(1000);
+  $('.labels_form').slideDown(1000);
+  $('#button_form').fadeIn(1000);
+  $('#comment').slideDown(1000);
+  $('#the_comment').fadeIn(1000);
+}
 
-count = true;
+}, false);
 
-}, 17000);*/
+//para seleccionar menu y que haga scroll hacia esa posicion
+/*$('#four_section').scrollView();*/
 
 });
 
-/*function world_shadow(){
-
-$('#world').removeClass('planet');
-$('#world').addClass('planet2');
-
-setTimeout(function () {
-
-$('#world').removeClass('planet2');
-$('#world').addClass('planet');
-
-
-}, 2000);
-
-}
-
-function nearly_sun(){
-
-
-   setTimeout(function () {
-
-      $('#moon').addClass('moon_brightness1');
-
-    }, 500);
-
-    setTimeout(function () {
-
-       $('#moon').removeClass('moon_brightness1');
-       $('#moon').addClass('moon_brightness2');
-
-     }, 800);
-
-     setTimeout(function () {
-
-        $('#moon').removeClass('moon_brightness2');
-        $('#moon').addClass('moon_brightness3');
-
-      }, 1100);
-
-      setTimeout(function () {
-
-         $('#moon').removeClass('moon_brightness3');
-         $('#moon').addClass('moon_brightness4');
-
-       }, 1400);
-
-       setTimeout(function () {
-
-       $('#moon').removeClass('moon_brightness4');
-       $('#moon').addClass('moon_brightness3');
-     }, 3400);
-
-       setTimeout(function () {
-
-         $('#moon').removeClass('moon_brightness3');
-         $('#moon').addClass('moon_brightness2');
-       }, 3700);
-
-       setTimeout(function () {
-
-         $('#moon').removeClass('moon_brightness2');
-         $('#moon').addClass('moon_brightness1');
-
-       }, 4000);
-
-       setTimeout(function () {
-
-         $('#moon').removeClass('moon_brightness1');
-
-       }, 4300);
-
-}*/
 function stars_shooter(){
   $('#star').hide();
   $('#star').fadeIn(3000);
@@ -157,4 +102,14 @@ setTimeout(function () {
   }, 1000);
 
 }, 6000);
+  }
+
+//para seleccionar menu y que haga scroll hacia esa posicion
+
+  $.fn.scrollView = function () {
+    return this.each(function () {
+      $('html, body').animate({
+        scrollTop: $(this).offset().top
+      }, 1000);
+    });
   }

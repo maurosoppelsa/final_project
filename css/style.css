@@ -1,3 +1,7 @@
+body{
+  background-color: #DC2742 !important;
+}
+
 #universe{
   background-image: url('../images/universe.jpg');
   background-repeat: no-repeat;
@@ -23,12 +27,13 @@
 }
 
 #moon{
-  background-color: #FFFFFF;
+  background-image: url('../images/moon.png');
   border-radius: 50px;
-  width: 100px;
-  height: 100px;
+  width: 60px;
+  height: 60px;
   position: absolute;
-  margin-left: 46%;
+  margin-left: 34%;
+  margin-top: -9%;
 }
 #sun{
   background-image: url('../images/sun.png');
@@ -36,6 +41,14 @@
   height: 307px;
   float: right;;
   margin-top: -12%;
+}
+#satellite{
+  background-image: url('../images/satellite.png');
+  width: 114px;
+  height: 100px;
+  position: absolute;
+  margin-left: 57%;
+  margin-top: -3%;
 }
 .moon_brightness1{
   background: -webkit-linear-gradient(left, #ffffff ,#FBFFB2); /* For Safari 5.1 to 6.0 */
@@ -68,6 +81,7 @@
   text-transform: uppercase;
   font-weight: bold;
   text-align: center;
+  margin-bottom: 20px;
 }
 .think_name{
   color: #CDCDCB;
@@ -110,7 +124,7 @@ padding-right: 1px;
   margin-top: 100px;
 }
 #second_section .title_section{
-  color: #363635;
+  color: #ffffff;
 }
 #negative_section{
 background-image: url('../images/apocalipsis.png');
@@ -152,27 +166,158 @@ color: #ffffff;
 }
 #third_section{
   background-image: url('../images/nature.jpg');
-  background-repeat: no-repeat;
-  /*background-color: #F15D58;*/
-  width: 100%;
   padding-right: 1px;
   padding-bottom: 1px;
   padding-top: 1px;
-  position: relative;
-  height: 500px;
 }
 #third_section .title_section{
 /*color: #363635;*/
 color: #fff;
 }
 
-#third_section #par_box1{
-  width: 200px;
-    position: absolute;
+#third_section p{
+  width: 500px;
     text-align: center;
     color: #FFF;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 30px;
+}
+#title_sect_3{
+  margin-top: 100px;
+  margin-bottom: 20px;
+}
+#third_section #content_sect_3{
+  text-align: center;
 }
 
+section.parallax {
+  height: 600px;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+section .parallax h2 {
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 48px;
+  line-height: 600px;
+  font-weight: 700;
+  text-align: center;
+  text-transform: uppercase;
+  text-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+#six_section{
+  background-color: #DC2742;
+  padding-right: 1px;
+  padding-bottom: 1px;
+  padding-top: 1px;
+   height: 600px;
+}
+#sidebar{
+  position: absolute;
+  margin-top: 30px;
+  width: 350px;
+  height: 470px;
+  background-image: url('../images/CO2Emissions.png');
+  /*background-color: #80BB17;*/
+  margin-left: -350px;
+  -webkit-transition: margin-left 0.5s; /* Safari */
+  transition: margin-left 0.5s;
+  border-radius: 20px;
+}
+#form_box{
+  width: 410px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 50px;
+}
+#form_box .form-control{
+  width: 70%;
+  background-color: #D30E00;
+  border: none;
+  display: none;
+}
+#form_box label{
+  color: #ffffff;
+}
+#form_box h3{
+font-weight: bold;
+color: #ffffff;
+margin-bottom: 30px;
+}
+.labels_form{
+  margin-bottom: 20px;
+}
+#comment{
+  margin-top: 25px;
+  background-color: #D30E00;
+  border: none;
+  width: 288px;
+}
+#the_comment{
+  float: right;
+  margin-top: 20px;
+  margin-right: 50px;
+}
+#comment_title{
+  color: #ffffff;
+  font-weight: bold;
+}
+#comment_content{
+  border: 5px solid #AD0B03;
+  height: 470px;
+}
 #four_section{
-  height: 400px;
+  background-image: url('../images/ocean.jpg');
+  padding-top: 100px;
+}
+#title_sect4{
+  color: #ffffff;
+}
+#separate{
+  height: 50px;
+}
+#four_section p{
+  width: 500px;
+text-align: center;
+color: #FFF;
+margin-left: auto;
+margin-right: auto;
+margin-bottom: 30px;
+}
+#content_sect_4{
+  text-align: center;
+}
+#title_sect_5{
+  text-align: center;
+  color: #DC2742;
+}
+#stat_frame{
+  width: 100%;
+  height: 500px;
+  border: none;
+}
+#five_section{
+  background-color: #ffffff;
+  padding-top: 15px;
+  padding-bottom: 20px;
+  border: 5px solid #DC2742;
+}
+.line_divider{
+  border-top: 1px solid #DC2742 !important;
+}
+#stat_elements{
+  display: flex;
+  display: -webkit-flex;
+}
+#footer{
+  background-color: #2B2B2B;
+  height: 150px;
+  width: 100%;
 }
